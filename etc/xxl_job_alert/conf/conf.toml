@@ -1,0 +1,14 @@
+interval = 60
+# 飞书通知的token，多个用,分开
+lark_tokens='aaaaaaaaaaaaaaaaaaaaa,bbbbbbbbbbbbbbbbbbbbbbbbbbb'
+[application]
+    name = "边缘告警服务"
+    port = 30000
+
+[[instances]]
+    id = "test_ych"
+    address = "192.168.10.89:21900"
+    db = "xxl_job"
+    username = "dba"
+    password = "1234*Qwer@xYz"
+    labels = {code="test", project="test_ych"}
